@@ -62,7 +62,7 @@ bookmarkRouter
     const bookmarkIndex = store.bookmarks.findIndex((b) => b.id == bookmark_id);
 
     if (bookmarkIndex === -1) {
-      logger.error(`Bookmark with id ${bookmark_id} not found.`);
+      console.error(`Bookmark with id ${bookmark_id} not found.`);
       return res.status(400).send("Bookmark Not Found");
     }
 
